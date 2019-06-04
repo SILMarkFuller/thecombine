@@ -26,7 +26,7 @@ namespace BackendFramework.Controllers
             return "this is the database mainpage";
         }
 
-        // GET: v1/collection
+        // GET: v1/Project/Words
         [EnableCors("AllowAll")]
         [HttpGet]
         public async Task<IActionResult> Get()
@@ -43,8 +43,8 @@ namespace BackendFramework.Controllers
            // return new ObjectResult(isTrue);
            
         }
-        // GET: v1/collection/name
-        [HttpGet("{Id}", Name = "Get")]
+        // GET: v1/Project/Words/name
+        [HttpGet("{Id}", Name = "WordGet")]
         public async Task<IActionResult> Get(string Id)
         {
             var word = await _wordService.GetWord(Id);
@@ -53,7 +53,7 @@ namespace BackendFramework.Controllers
             return new ObjectResult(word);
         }
 
-        // POST: v1/collection
+        // POST: v1/Project/Words
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]Word word) //tskes the word content from the http req body not from the path or 
         {
@@ -62,15 +62,15 @@ namespace BackendFramework.Controllers
             return new OkObjectResult(word.Id);
         }
 
-        // PUT: v1/collection/5
+        // PUT: v1/Project/Words/5
         [HttpPut("{Id}")]
-        public async Task<IActionResult> Put(string Id, Word word)   //also I dont think we need this
+        public async Task<IActionResult> Put(string Id, [FromBody] Word word)   //also I dont think we need this
         {
             var document = await _wordService.GetWord(Id);
             if (document == null)
                 return new NotFoundResult();
             word.Id = document[0].Id;               //this is sloppy and it should be fixed
-            await _wordService.Update(Id);
+            await _wordService.Update(Id, word);
             return new OkObjectResult(word.Id);
         }
         // DELETE: v1/ApiWithActions/5

@@ -7,7 +7,7 @@ namespace BackendFramework.ValueModels
     public class Word
     {
 
-        public enum state
+        public enum State
         {
             active,
             deleted,
@@ -28,6 +28,9 @@ namespace BackendFramework.ValueModels
         [BsonElement("Audio")]
         public string Audio { get; set; }
 
+        [BsonElement("Timestamp")]
+        public string Timestamp { get; set; }
+
         [BsonElement("Created")]
         public string Created { get; set; }
 
@@ -44,10 +47,10 @@ namespace BackendFramework.ValueModels
         public string PartOfSpeech { get; set; }
 
         [BsonElement("EditedBy")]
-        public List<Users> EditedBy { get; set; }
+        public List<string> EditedBy { get; set; }
 
         [BsonElement("Accessability")]
-        public state Accessability { get; set; }
+        public State Accessability { get; set; }
 
         [BsonElement("OtherField")]
         public string OtherField { get; set; }

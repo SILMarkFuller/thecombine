@@ -1,0 +1,5 @@
+C:\Users\SkinnerS\source\repos\practiceframework2\Unit Testing\bin\Debug\netcoreapp2.2\practiceframework2.dll
+C:\Users\SkinnerS\source\repos\practiceframework2\Unit Testing\obj\Debug\netcoreapp2.2\Unit Testing.csprojAssemblyReference.cache
+C:\Users\SkinnerS\source\repos\practiceframework2\Unit Testing\obj\Debug\netcoreapp2.2\Unit Testing.csproj.CoreCompileInputs.cache
+C:\Users\SkinnerS\source\repos\practiceframework2\Unit Testing\obj\Debug\netcoreapp2.2\Unit Testing.AssemblyInfoInputs.cache
+C:\Users\SkinnerS\source\repos\practiceframework2\Unit Testing\obj\Debug\netcoreapp2.2\Unit Testing.AssemblyInfo.cs

@@ -64,13 +64,22 @@ namespace BackendFramework.Services
 
 
 
-        public async Task<bool> Update(string Id)
+        public async Task<bool> Update(string Id, Word word)
         {
             FilterDefinition<Word> filter = Builders<Word>.Filter.Eq(m => m.Id, Id);
 
-            DeleteResult deleteResult = await _wordDatabase.Words.DeleteOneAsync(filter);
+            Word deletedTag = new Word();
+            deletedTag.Accessability = (Word.State) 1;
 
-            return deleteResult.IsAcknowledged && deleteResult.DeletedCount > 0;
+            var updateDef = Builders<Word>.Update.Set(x => x.Accessability, deletedTag.Accessability);
+                
+            var updateResult = _wordDatabase.Words.UpdateOne(filter, updateDef);
+
+            //await _wordDatabase.Words.InsertOneAsync(word);
+            word.Id = null;
+            await Create(word);
+
+            return updateResult.IsAcknowledged && updateResult.ModifiedCount > 0;
         }
     }
 

@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace BackendFramework.Interfaces
 {
-    public interface IWordService
+    public interface IUserService
     {
-        Task<List<Word>> GetAllWords();
-        Task<List<Word>> GetWord(string Id);
-        Task<Word> Create(Word word);
-        Task<bool> Update(string Id, Word word);
+        Task<List<User>> GetAllUsers();
+        Task<List<User>> GetUser(string Id);
+        Task<User> Create(User user);
+        Task<bool> Update(string Id, User user);
         Task<bool> Delete(string Id);
-        Task<bool> DeleteAllWords();
+        Task<bool> DeleteAllUsers();
     }
 }

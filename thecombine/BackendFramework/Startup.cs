@@ -28,7 +28,8 @@ namespace BackendFramework
         public class Settings
         {
             public string ConnectionString { get; set; }
-            public string Database { get; set; }
+            public string WordsDatabase { get; set; }
+            public string UsersDatabase { get; set; }
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -49,10 +50,13 @@ namespace BackendFramework
         options =>
         {
             options.ConnectionString = Configuration.GetSection("MongoDB:ConnectionString").Value;
-            options.Database = Configuration.GetSection("MongoDB:Database").Value;
+            options.WordsDatabase = Configuration.GetSection("MongoDB:WordsDatabase").Value;
+            options.UsersDatabase = Configuration.GetSection("MongoDB:UsersDatabase").Value;
         });
             services.AddTransient<IWordContext, WordContext>();
             services.AddTransient<IWordService, WordService>();
+            services.AddTransient<IUserContext, UserContext>();
+            services.AddTransient<IUserService, UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
