@@ -1,0 +1,14 @@
+C:\Users\SkinnerS\james_combine\thecombine\BackendFramework\bin\Debug\netcoreapp2.2\BackendFramework.deps.json
+C:\Users\SkinnerS\james_combine\thecombine\BackendFramework\bin\Debug\netcoreapp2.2\BackendFramework.runtimeconfig.json
+C:\Users\SkinnerS\james_combine\thecombine\BackendFramework\bin\Debug\netcoreapp2.2\BackendFramework.runtimeconfig.dev.json
+C:\Users\SkinnerS\james_combine\thecombine\BackendFramework\bin\Debug\netcoreapp2.2\BackendFramework.dll
+C:\Users\SkinnerS\james_combine\thecombine\BackendFramework\bin\Debug\netcoreapp2.2\BackendFramework.pdb
+C:\Users\SkinnerS\james_combine\thecombine\BackendFramework\obj\Debug\netcoreapp2.2\BackendFramework.csprojAssemblyReference.cache
+C:\Users\SkinnerS\james_combine\thecombine\BackendFramework\obj\Debug\netcoreapp2.2\BackendFramework.csproj.CoreCompileInputs.cache
+C:\Users\SkinnerS\james_combine\thecombine\BackendFramework\obj\Debug\netcoreapp2.2\BackendFramework.RazorAssemblyInfo.cache
+C:\Users\SkinnerS\james_combine\thecombine\BackendFramework\obj\Debug\netcoreapp2.2\BackendFramework.RazorAssemblyInfo.cs
+C:\Users\SkinnerS\james_combine\thecombine\BackendFramework\obj\Debug\netcoreapp2.2\BackendFramework.AssemblyInfoInputs.cache
+C:\Users\SkinnerS\james_combine\thecombine\BackendFramework\obj\Debug\netcoreapp2.2\BackendFramework.AssemblyInfo.cs
+C:\Users\SkinnerS\james_combine\thecombine\BackendFramework\obj\Debug\netcoreapp2.2\BackendFramework.RazorTargetAssemblyInfo.cache
+C:\Users\SkinnerS\james_combine\thecombine\BackendFramework\obj\Debug\netcoreapp2.2\BackendFramework.dll
+C:\Users\SkinnerS\james_combine\thecombine\BackendFramework\obj\Debug\netcoreapp2.2\BackendFramework.pdb
