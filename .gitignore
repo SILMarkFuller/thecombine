@@ -29,3 +29,11 @@ mongo_database/*
 .vs/*
 Backend/bin
 Backend/obj
+
+# Other
+BackendFramework/bin
+BackendFramework/obj
+UnitTesting/UnitTesting/obj
+UnitTesting/bin
+UnitTesting/obj
+thecombine/obj
